@@ -1,0 +1,96 @@
+---
+layout: base
+---
+<header>
+  <img src="{{ site.baseurl }}/images/logo.svg" alt="RoVer" height="150" />
+  <br><br><br><br>
+  <a target="_blank" href="https://discord.com/oauth2/authorize?client_id=298796807323123712&scope=bot&permissions=402656264"
+    class="button">Add to your server</a>
+  <a target="_blank" href="https://verify.eryn.io" class="button">Get verified</a>
+  <a target="_blank" href="https://discord.gg/utB3RUT" class="button">Discord Community</a>
+  <br><br>
+  <a target="_blank" href="https://github.com/evaera/RoVer">View Source on GitHub</a>
+  <br><br>
+  <h2 style="visibility: hidden"><span id="count">250,000+</span> Robloxians verified</h2>
+  <br><br>
+  <a href="https://www.patreon.com/erynlynn" target="_blank" class="plus-button">Get RoVer Plus</a>
+</header>
+<script src="{{ site.baseurl }}/js/site.js"></script>
+<section>
+  <div class="inner">
+    <h1>Free Features</h1>
+    <div class="split">
+      <div>
+        <p><strong>Verified users</strong> can be nicknamed to their Roblox name and given a specific role upon
+          verification.</p>
+        <p><strong>Highly customizable</strong> &mdash; Customizable nickname format, adding or removing a certain role
+          upon verification, or toggling off certain features altogether.</p>
+        <p><strong>Open Source</strong> &mdash; Completely self-hostable and easy to trust.</p>
+        <p><strong>Millions of verified users</strong> &mdash; Most of your users are probably already verified with RoVer, making integrating with your community much easier.</p>
+      </div>
+      <div>
+        <p><strong>Group integration</strong> &mdash; Full support for giving roles to group members or allies meeting
+          an array of customizable parameters.</p>
+        <p><strong>Binding roles to resources</strong> such as user owning a game pass, badge, or asset or DevForum
+          membership.</p>
+        <p><strong>Trusted by the best</strong> &mdash; RoVer empowers hundreds of thousands of servers, including many of the largest Roblox Discord communities.</p>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</section>
+<section class="plus">
+  <div class="inner">
+    <h1>RoVer Plus - $6/month</h1>
+    <div class="split">
+      <div>
+        <p><strong>Automatic user updates</strong>. Users don't have to run a command to get their nicknames changed or roles updated.</p>
+        <p><strong>Update everyone</strong> (up to 1000 at once). In a single command, update everyone in your server or of a certain role.</p>
+        <p><strong>RoVer Plus in all servers that you own for one price</strong>. You can optionally transfer your Plus membership to another user after becoming a patron.</p>
+      </div>
+      <div>
+        <p><strong>Unlimited role bindings</strong>. Bind as many roles as you want. The free version of RoVer can only bind up to 15 roles.</p>
+        <p><strong>Better uptime</strong> - RoVer Plus is hosted on a dedicated server so it is unaffected by downtime that can affect the free RoVer bot.</p>
+        <p><strong>Priority support</strong> - Have your questions answered before free users and get personalized help from a RoVer team member joining your server to assist with any issues.</p>
+      </div>
+    <div class="clear"></div>
+    <p style="text-align: center;">
+
+  <a href="https://www.patreon.com/erynlynn" target="_blank" class="plus-button">Get RoVer Plus</a>
+    </p>
+
+    </div>
+  </div>
+</section>
+<section class="white" id="readme">
+  <div class="inner" style="max-width: 800px">
+    <div class="toc red">
+      <h2>Table of Contents</h2>
+      <ul>
+
+      </ul>
+    </div>
+    {{ content }}
+  </div>
+</section>
+<script>
+  document.querySelectorAll('a').forEach(a => {
+    if (a.href.indexOf('#') === -1) {
+      a.target = '_blank'
+    }
+  })
+
+  const tags = ['h1', 'h2', 'h3', 'h4']
+
+  $(tags.join(', ')).each(function () {
+    const id = $(this).attr('id')
+    const text = $(this).text()
+    if (id) {
+      let margin = tags.indexOf($(this).prop('tagName').toLowerCase()) * 10
+      $('.toc ul').append(`<li style="margin-left: ${margin}px"><a href="#${id}" onclick="top.window.location.hash = '${id}'">${text}</a></li>`)
+    }
+  })
+</script>
+<p align="center" style="margin-bottom: 50px;">
+  ❤️️
+</p>
